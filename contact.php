@@ -21,28 +21,8 @@
 
 </head>
 <body>
-  <div class="block">
-    <header class="header">
-      <a href="#" class="header-logo">Mon blog</a>
-      <nav class="header-menu">
-        <a href="#">Accueil</a>
-        <a href="#about">A propos</a>
-        <a href="#porfo">Mes travaux</a>
-        <a href="#mail">Contact</a>
-      </nav>  
-    </header>
-  </div>
 
-  <div class="block">
-    <div class="banner">
-      <img src="bg.jpg" alt="ordinateur avec du code" class="banner-image">
-      <div class="banner-content">
-        <h1 class="title is-1"> Jérôme Magnier 2.0 </h1>
-        <h2 class="subtitle">Développeur web en devenir</h2>
-        <button class="button is-link" id="open_modal">Contactez-moi !</button>
-      </div>
-    </div>
-  </div>
+  <?php require "header.html"; ?>
 
   <div class="modal own-modal" id="modal_to_open">
     <div class="modal-background"></div>
@@ -58,67 +38,6 @@
         <button class="button is-link">Sauvegarder</button>
         <button class="button" id="close_modal">Annuler</button>
       </footer>
-    </div>
-  </div>
-
-  <div class="block">
-    <h2 class="subtitle heading-site" id="about">A propos</h2>
-    <div class="container about">
-      <div class="columns">
-        <div class="column about-single-element">
-          <i class="fab fa-html5 icon"></i>
-          <p>Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.</p>
-        </div>
-        <div class="column about-single-element">
-          <i class="fab fa-js icon"></i>
-          <p>Ac ne quis a nobis hoc ita dici forte miretur, quod alia quaedam in hoc facultas sit ingeni, neque haec dicendi ratio aut disciplina, ne nos quidem huic uni studio penitus umquam dediti fuimus. Etenim omnes artes, quae ad humanitatem pertinent, habent quoddam commune vinculum, et quasi cognatione quadam inter se continentur.</p>
-        </div>
-        <div class="column about-single-element">
-          <i class="fab fa-css3-alt icon"></i>
-          <p>Illud tamen clausos vehementer angebat quod captis navigiis, quae frumenta vehebant per flumen, Isauri quidem alimentorum copiis adfluebant, ipsi vero solitarum rerum cibos iam consumendo inediae propinquantis aerumnas exitialis horrebant.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="block">
-    <h2 class="subtitle heading-site" id="porfo">Mon portfolio</h2>
-    <div class="container">
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-8">
-          <div class="tile">
-            <div class="tile is-parent is-vertical">
-              <article class="tile is-child">
-                <div class="notification">contient une photo</div>
-              </article>
-              <article class="tile is-child">
-                <img src="code.jpg" alt="code source">
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child">
-                <div class=" notification is-primary">
-                  <div class="COLORED">
-                    100 X 100
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child">
-                <img src="code2.jpg" alt="code source">
-            </article>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <article class="tile is-child">
-              <div class="notification is-warning">
-                Le contenu
-              </div>
-          </article>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -174,5 +93,6 @@
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="main.js"></script>  
-</body>
+      
+      </body>
 </html>
